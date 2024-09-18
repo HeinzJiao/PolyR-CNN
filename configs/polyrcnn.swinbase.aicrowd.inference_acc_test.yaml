@@ -1,0 +1,5 @@
+_BASE_: "polyrcnn.swinbase.aicrowd.yaml"
+MODEL:
+  WEIGHTS: "output/model.pth"
+DATASETS:
+  TEST: ("aicrowd_test",)

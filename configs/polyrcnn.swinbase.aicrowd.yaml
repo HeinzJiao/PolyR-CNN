@@ -1,0 +1,28 @@
+_BASE_: "Base-PolyRCNN.yaml"
+DATALOADER:
+  NUM_WORKERS: 12
+MODEL:
+  WEIGHTS: "models/swin_base_patch4_window7_224_22k.pkl"
+  BACKBONE:
+    NAME: build_swintransformer_fpn_backbone
+  SWIN:
+    SIZE: B-22k
+  FPN:
+    IN_FEATURES: ["swin0", "swin1", "swin2", "swin3" ]
+  SparseRCNN:
+    NUM_PROPOSALS: 100
+    NUM_CLASSES: 1
+DATASETS:
+  TRAIN: ("aicrowd_train",)
+  TEST:  ("aicrowd_test",)
+SOLVER:
+  STEPS: (1456318, 1754599)  # 83th epoch
+  MAX_ITER: 1754600  # 100th epoch
+  CHECKPOINT_PERIOD: 17546  # the number of images per batch
+  IMS_PER_BATCH: 16
+TEST:
+  EVAL_PERIOD: 2100000
+INPUT:
+  CROP:
+    ENABLED: False
+  FORMAT: "RGB"
