@@ -14,6 +14,16 @@ To run the preprocessing yourself, you can execute the following command:
 python3 preprocess_annotation.py --json_path /path/to/annotations.json --save_path /path/to/save/annotation_preprocessed.json --is_training True --num_corners 96
 ```
 
+## Training
+
+To start training the PolyR-CNN model on the CrowdAI dataset, you can use the following command:
+
+```bash
+python3 train_net.py --num-gpus <number_of_gpus> --config-file configs/polyrcnn.res50.100pro.aicrowd.yaml
+```
+
+You can use different configuration files from the [`configs/`](./configs/) folder depending on your requirements (e.g., switching to ResNet101 or Swin Transformer backbones).
+
 ## Status
 
 The remaining code is currently being organized and will be uploaded soon. Stay tuned for updates!
