@@ -24,11 +24,6 @@ python3 train_net.py --num-gpus <number_of_gpus> --config-file configs/polyrcnn.
 
 You can use different configuration files from the [`configs/`](./configs/) folder depending on your requirements (e.g., switching to ResNet101 or Swin Transformer backbones).
 
-## Status
-
-The remaining code is currently being organized and will be uploaded soon. Stay tuned for updates!
-
 ## Coming Soon
 
-- Complete training and inference pipelines
-- Example datasets and usage instructions
+- Complete inference pipelines
