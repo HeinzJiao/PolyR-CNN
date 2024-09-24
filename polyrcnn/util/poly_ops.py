@@ -74,7 +74,7 @@ def pad_gt_polys(gt_instances, num_queries_per_poly, device, dataset_name):
 
         for i, poly in enumerate(gt_inst.gt_masks.polygons):
             corners = torch.from_numpy(poly[0]).to(device)
-            if dataset_name == "aicrowd" or "aicrowd_gray":
+            if dataset_name == "aicrowd":
                 corners = torch.clip(corners, 0, 255) / 255  # aicrowd
             else:
                 corners = torch.clip(corners, 0, 255) / 255  # stru3d
