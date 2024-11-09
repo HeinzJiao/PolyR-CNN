@@ -140,6 +140,10 @@ def register_my_dataset(dataset_name="aicrowd_train",
 
 def main(args):
     cfg = setup(args)
+    # Note: Modify the parameters in `register_my_dataset` for different datasets:
+    # - `dataset_name`: The name of the dataset to register.
+    # - `TRAIN_JSON`: Path to the COCO-format annotation file for the dataset.
+    # - `TRAIN_PATH`: Path to the folder containing the dataset images.
     register_my_dataset(dataset_name="aicrowd_train",
                         TRAIN_JSON="../../data/aicrowd/train/annotation_preprocessed.json",
                         TRAIN_PATH="../../data/aicrowd/train/images")
