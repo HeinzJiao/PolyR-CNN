@@ -13,6 +13,9 @@ To run the preprocessing yourself, you can execute the following command:
 ```bash
 python3 preprocess_annotation.py --json_path /path/to/annotations.json --save_path /path/to/save/annotation_preprocessed.json --is_training True --num_corners 96
 ```
+## Environment Setup
+
+
 
 ## Training
 
