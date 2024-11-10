@@ -18,7 +18,7 @@ from detectron2.structures import (
     polygons_to_bitmask,
 )
 import cv2
-from util.poly_ops import is_clockwise, resort_corners_and_labels
+from .util.poly_ops import is_clockwise, resort_corners_and_labels
 
 __all__ = ["PolyRCNNRCNNDatasetMapper"]
 
