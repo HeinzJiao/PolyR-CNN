@@ -18,7 +18,7 @@ DATASETS:
 SOLVER:
   STEPS: (1456318, 1754599)  # 83th epoch
   MAX_ITER: 1754600  # 100th epoch
-  CHECKPOINT_PERIOD: 17546  # the number of images per batch
+  CHECKPOINT_PERIOD: 17546  # save checkpoint per epoch
   IMS_PER_BATCH: 16
 TEST:
   EVAL_PERIOD: 2100000
