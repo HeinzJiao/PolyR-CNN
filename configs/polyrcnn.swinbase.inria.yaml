@@ -9,16 +9,16 @@ MODEL:
     SIZE: B-22k
   FPN:
     IN_FEATURES: ["swin0", "swin1", "swin2", "swin3" ]
-  SparseRCNN:
+  PolyRCNN:
     NUM_PROPOSALS: 100  # inner polys
     NUM_CLASSES: 1
 DATASETS:
-  TRAIN: ("inria_train",)
+  TRAIN: ("inria_train",)  # 89280 images in total (outer polys), 10908 images in total (inner polys)
   TEST:  ("aicrowd_test",)
 SOLVER:
   STEPS: (60698, 68200)  # 89th epoch
   MAX_ITER: 68201  # 100th epoch
-  CHECKPOINT_PERIOD: 682  # the number of images per batch: 89280 images in total (outer polys), 10908 images in total (inner polys)
+  CHECKPOINT_PERIOD: 682  # save checkpoint per epoch
   IMS_PER_BATCH: 16
 TEST:
   EVAL_PERIOD: 5000000
