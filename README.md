@@ -31,8 +31,6 @@ You can use different configuration files from the [`configs/`](./configs/) fold
 
 The remaining code is currently being organized and will be uploaded soon. Stay tuned for updates!
 
-## The paper is accepted by the ISPRS Journal of Photogrammetry and Remote Sensing (IF 10.6)！
-
 ## Coming Soon
 
 - Complete inference pipelines
