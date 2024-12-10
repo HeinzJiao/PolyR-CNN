@@ -27,10 +27,14 @@ python3 train_net.py --num-gpus <number_of_gpus> --config-file configs/polyrcnn.
 
 You can use different configuration files from the [`configs/`](./configs/) folder depending on your requirements (e.g., switching to ResNet101 or Swin Transformer backbones).
 
+## Testing
+
+To test the PolyR-CNN model on a single image or all images in a folder and visualize the results, you can use the demo.py script. Refer to the arguments in the demo.py script for detailed usage.
+
+To evaluate the model on a complete COCO-format dataset, use the evaluate.py script. The predicted results will be saved as a COCO-format prediction file.
+
+For detailed metric evaluation, such as MS-COCO metrics, PoLiS, etc., refer to the evaluation tools provided in the [HiSup repository](https://github.com/SarahwXU/HiSup). Specifically, you can use the tools/evaluation.py script in HiSup to test COCO-format datasets.
+
 ## Status
 
 The remaining code is currently being organized and will be uploaded soon. Stay tuned for updates!
-
-## Coming Soon
-
-- Complete inference pipelines
