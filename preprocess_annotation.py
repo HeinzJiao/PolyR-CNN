@@ -32,10 +32,12 @@ def preprocess_annotation(json_path, save_path, num_corners, is_training=True):
     - labels (dict) contains: {'info', 'categories', 'images', 'annotations'}
     - labels['annotations'] (list of dicts):
       - 'id', 'image_id', 'segmentation', 'area', 'bbox', 'category_id', 'iscrowd'
-      - Segmentation:
+      - 'segmentation':
         - Vertices distributed clockwise with a random start point.
         - First and last vertices are identical.
         - Vertex coordinates are either int or float.
+      - 'bbox':
+        - wrong label.
 
     Preprocessed annotation format:
     - labels['annotations'] (list of dicts):
