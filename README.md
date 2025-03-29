@@ -6,8 +6,6 @@ This is the official repository for **PolyR-CNN**, a model designed for end-to-e
 
 To minimize training time, we have preprocessed the CrowdAI dataset by localizing the polygon padding process to ensure a fixed number of vertices per polygon, reducing the need for on-the-fly computation during training. For detailed information on the polygon padding process, please refer to the article.
 
-The preprocessed CrowdAI dataset can be downloaded [here](#) (Google Drive link to be provided).
-
 To run the preprocessing yourself, you can execute the following command:
 
 ```bash
