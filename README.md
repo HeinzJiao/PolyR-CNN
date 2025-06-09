@@ -33,9 +33,9 @@ To evaluate the model on a complete COCO-format dataset, use the [`evaluate.py`]
 
 For detailed metric evaluation, such as MS-COCO metrics, PoLiS, etc., refer to the evaluation tools provided in the [HiSup repository](https://github.com/SarahwXU/HiSup). Specifically, you can use the tools/evaluation.py script in HiSup to test COCO-format datasets.
 
-## 📰 Related Publications
+## 🚀 New Paper Alert
 
-This repository is part of a broader research effort on vectorized object outline extraction for large-scale topographic map generation. Check out our related publications:
+This repository is part of a broader research effort on vectorized object outline extraction for large-scale topographic map generation. Check out our latest publications:
 
 - **RoIPoly: Vectorized Building Outline Extraction Using Vertex and Logit Embeddings**  
   *ISPRS Journal of Photogrammetry and Remote Sensing*, 2025  
