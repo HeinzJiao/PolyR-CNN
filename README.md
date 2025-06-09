@@ -32,3 +32,13 @@ To test the PolyR-CNN model on a single image or all images in a folder and visu
 To evaluate the model on a complete COCO-format dataset, use the [`evaluate.py`](./evaluate.py/) script. The predicted results will be saved as a COCO-format prediction file.
 
 For detailed metric evaluation, such as MS-COCO metrics, PoLiS, etc., refer to the evaluation tools provided in the [HiSup repository](https://github.com/SarahwXU/HiSup). Specifically, you can use the tools/evaluation.py script in HiSup to test COCO-format datasets.
+
+## 📰 Related Publications
+
+This repository is part of a broader research effort on vectorized object outline extraction for large-scale topographic map generation. Check out our related publications:
+
+- **RoIPoly: Vectorized Building Outline Extraction Using Vertex and Logit Embeddings**  
+  *ISPRS Journal of Photogrammetry and Remote Sensing*, 2025  
+  📄 [Paper (DOI)](https://doi.org/10.1016/j.isprsjprs.2025.03.030) ｜ 💻 [Official Code](https://github.com/HeinzJiao/RoIPoly)  
+  → Introduces a transformer-based RoI polygon decoder with efficient vertex-level interaction and logit-guided embedding, enabling direct and redundancy-free polygon generation that eliminates the need for post-processing — setting new SOTA on CrowdAI.
+
