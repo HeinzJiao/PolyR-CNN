@@ -42,3 +42,8 @@ This repository is part of a broader research effort on vectorized object outlin
   📄 [Paper (DOI)](https://doi.org/10.1016/j.isprsjprs.2025.03.030) ｜ 💻 [Official Code](https://github.com/HeinzJiao/RoIPoly)  
   → Introduces a transformer-based RoI polygon decoder with efficient vertex-level interaction and logit-guided embedding, enabling direct and redundancy-free polygon generation that eliminates the need for post-processing — setting new SOTA on CrowdAI.
 
+- **LDPoly: Latent diffusion for polygonal road outline extraction in large-scale topographic mapping**  
+  *ISPRS Journal of Photogrammetry and Remote Sensing*, 2025  
+  📄 [Paper (DOI)](https://doi.org/10.1016/j.isprsjprs.2025.10.005) ｜ 💻 [Code & Pretrained Models & Dataset](https://github.com/HeinzJiao/LDPoly)  
+  → *The first generative framework and benchmark for polygonal road outline extraction.*
+
