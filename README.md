@@ -34,6 +34,8 @@ conda activate polyrcnn
 
 Follow the official [Detectron2 installation guide](https://github.com/facebookresearch/detectron2/tree/main).
 
+If installation is problematic, you can also download the [detectron2 fork from RoomFormer](https://github.com/ywyue/RoomFormer/tree/main/detectron2) and place it directly under the `RoIPoly` directory.
+
 ### 3. Install Remaining Dependencies
 
 ```bash
